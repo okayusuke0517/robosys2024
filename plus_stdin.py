@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 import sys
 
-ans = 0
-for line in sys.stdin:
+def toum(s):
     try:
-            ans += int(line)
+        return int(s)
     except:
-            ans += float(line)
+        return float(s)
 
-print(ans)
+    ans = 
+    for line in sys.stdin:
+        ans += tonum(line)
+
+        print(ans)
 
