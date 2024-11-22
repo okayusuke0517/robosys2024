@@ -8,17 +8,17 @@ def play_game():
     directions = ['上','下','左','右']
 
     for i in range(1, 4):
-        input("\n{i}回目: Enterを押すと開始")
+        input(f"\n{i}回目: Enterを押すと開始")
         print(f"あっち向いてホイ　> {random.choice(directions)}")
 
         
         while True:
             user_input = input("勝っていたらｙ、負けていたらｎをおせ")
             if user_input == 'y':
-                print(f"あなたの勝ち")
+                print("あなたの勝ち")
                 break
             elif user_input == 'n':
-                print(f"コンピュータの勝ち")
+                print("コンピュータの勝ち")
                 break
 
     input("\n3回終わったのでEnterを押して終了")
