@@ -51,5 +51,10 @@ k1に書いたコードをk1\_test1 , k1\_test2 , k1\_test3\_all のように途
 ## ライセンス
 
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
-* © 2024 Yusuke Oka
+© 2024 Yusuke Oka
 
+## 参照サイト
+
+- https://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/python/readfile.html      
+- https://machine-learning-skill-up.com/knowledge/python%E6%A8%99%E6%BA%96%E5%85%A5%E5%8A%9B%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%81%A8%E6%B4%BB%E7%94%A8%E6%96%B9%E6%B3%95%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC%EF%BC%81
+- https://magazine.techacademy.jp/magazine/15821
