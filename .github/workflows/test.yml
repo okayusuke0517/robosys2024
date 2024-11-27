@@ -8,5 +8,5 @@ jobs:
                      python-version: ["3.7","3.8","3.9","3.10"]      
                 steps:
                 - uses: actions/checkout@v3
-                - name: run k1_test2 test
-                  run: python3 k1_test2
+                - name: run k1_test3_all test
+                  run: python3 k1_test3_all
