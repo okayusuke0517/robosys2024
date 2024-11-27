@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Yusuke Oka
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+import random
+import time
+
+def main():
+
+        print("遊ぶ回数を数字で入力してね:")
+        rounds = int(sys.stdin.readline().strip())
+        play_game(rounds)
+
+def play_game(rounds):        
+    directions = ['上','下','左','右']
+
+    for i in range(rounds):
+        print(f"\nゲーム{i + 1}")
+        print("あっち向いてホイ")
+        time.sleep(3)
+        print(f"  -> {random.choice(directions)}")
+        time.sleep(2)
+
+    print("\n終了")
+
+if __name__ =="__main__":
+    main()
+
