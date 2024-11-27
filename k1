@@ -8,8 +8,11 @@ import time
 
 def main():
 
-        print("遊ぶ回数を数字で入力してね:")
-        rounds = int(sys.stdin.readline().strip()) # 整数に変換し、入力を１行として読み込む。
+        print("ゲームスタート")
+        rounds = 0
+        for line in sys.stdin:
+            rounds = int(line.strip())
+            break
         play_game(rounds)
 
 def play_game(rounds):
