@@ -8,8 +8,11 @@ import time
 
 def main():
 
-        print("遊ぶ回数を数字で入力してね:")
-        rounds = int(sys.stdin.readline().strip())
+        print("ゲームスタート")
+        rounds = 0
+        for line in sys.stdin:
+            rounds = int(line.strip())
+            break
         play_game(rounds)
 
 def play_game(rounds):
@@ -17,9 +20,6 @@ def play_game(rounds):
 
     for i in range(rounds):
         print(f"\nゲーム{i + 1}")
-        print("あっち向いてホイ")
-        time.sleep(3)
-        print(f"  -> {random.choice(directions)}")
 
 
 if __name__ =="__main__":
