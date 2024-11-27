@@ -17,6 +17,10 @@ def play_game(rounds):
 
     for i in range(rounds):
         print(f"\nゲーム{i + 1}")
+        print("あっち向いてホイ")
+        time.sleep(3)
+        print(f"  -> {random.choice(directions)}")
+
 
 if __name__ =="__main__":
     main()
