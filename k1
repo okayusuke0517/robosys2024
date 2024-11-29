@@ -7,17 +7,26 @@ import random
 import time
 
 def main():
-
-        print("ゲームスタート")
+    try:
+        # ラウンド数取得
         rounds = 0
         for line in sys.stdin:
-            rounds = int(line.strip())
+            rounds = int(line.strip()) # 整数に変換
+            if rounds < 0:
+                raise ValueError("ラウンド数は０以上の整数にしろ。")
             break
-        play_game(rounds)
+    except ValueError as e:
+        if "invalid literal" in str(e): # エラーメッセージに"invalid literal"があるか
+            print("正しい数字を入力しろ。（０以上の整数）") # aと打ったときのエラー
+        else:
+            print(e) # -1と打ったときのエラー
+        sys.exit(1) 
+
+    play_game(rounds)
 
 def play_game(rounds):
     directions = ['上','下','左','右']
-
+    print("ゲームスタート")
     for i in range(rounds):
         print(f"\nゲーム{i + 1}")    
         print("あっち向いてホイ")
