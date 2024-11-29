@@ -13,14 +13,14 @@ def main():
         for line in sys.stdin:
             rounds = int(line.strip()) # 整数に変換
             if rounds < 0:
-                raise ValueError("ラウンド数は０以上の整数にしろ。")
+                raise ValueError("ラウンド数は０以上の整数にしろ。") # 例外（-1など）
             break
     except ValueError as e:
-        if "invalid literal" in str(e): # エラーメッセージに"invalid literal"があるか
+        if "invalid literal" in str(e): # エラーメッセージに"invalid literal"があるか。整数に変換するところで無効な値（aなど）をうってるか。
             print("正しい数字を入力しろ。（０以上の整数）") # aと打ったときのエラー
         else:
             print(e) # -1と打ったときのエラー
-        sys.exit(1) 
+        sys.exit(1) # エラー終了
 
     play_game(rounds)
 
