@@ -1,17 +1,39 @@
-#!/usr/bin/python3
+#!/usr/bin/bash -xv
 # SPDX-FileCopyrightText: 2024 Yusuke Oka
 # SPDX-License-Identifier: BSD-3-Clause
 
-import sys
-import random  
-import time
+ng () {
+        echo ${1}行目が違うよ
+        res=1
+
+}
+
+res=0
+
+# 正常な入力のテスト
+out=$(echo 3 | ./k1)
+[[ "$out" == *"ゲームスタート"* && "$out" == *"終了"* ]] || ng "$LINENO"
+
+out=$(echo 0 | ./k1)
+[[ "$out" == *"ゲームスタート"* && "$out" == *"終了"* ]] || ng "$LINENO"
 
 
-def main():
 
-        print("ゲームスタート")
 
-if __name__ =="__main__":
-    main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ "${res}" = 0 ] && echo OK
+exit $res
 
 
